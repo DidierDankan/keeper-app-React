@@ -14,11 +14,11 @@ function App() {
             <section>
             {
                 notes.map( note => 
-                    <Note 
+                    (<Note 
                     key={note.key}
                     title={note.title}
                     content={note.content}
-                />
+                    />)
                 )
             }
             </section>
