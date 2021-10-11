@@ -9,6 +9,11 @@ function Note(props) {
             <p>
                 {props.content}
             </p>
+            <button onClick={()=> {
+                props.onChecked(props.id)
+            }}>
+                delete
+            </button>
         </div>
     )
 }
