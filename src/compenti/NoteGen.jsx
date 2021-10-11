@@ -20,6 +20,7 @@ function NoteGen(props) {
 
 
     return (
+      <div>
         <form>
           <input onChange={handleChange} name="title" placeholder="Note title..." value={newNote.title}/>
           <textarea onChange={handleChange} name="content" placeholder="Note content..." value={newNote.content}>{newNote.content}</textarea>
@@ -34,6 +35,7 @@ function NoteGen(props) {
             add
           </button>  
         </form>
+      </div>
     )
 }
 

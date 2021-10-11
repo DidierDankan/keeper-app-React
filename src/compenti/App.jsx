@@ -5,8 +5,7 @@ import Header from "./Header";
 import NoteGen from "./NoteGen";
 import Note from "./Note";
 import Footer from "./Footer"
-//Oggetto
-// import notes from "../notes";
+
 
 function App() {
 
@@ -31,8 +30,8 @@ function App() {
     return(
         <div>
             <Header />
-            <section>
             <NoteGen addNote={addNote}/>
+            <section>
             {
                 notes.map( (note,index) => 
                     (<Note 
